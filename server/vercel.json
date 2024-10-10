@@ -4,6 +4,11 @@
 
 {
     "version": 2,
+    "functions": {
+    "src/*server.js": {
+      "maxDuration": 60
+    }
+  },
     "builds": [
       {
         "src": "src/server.js",
