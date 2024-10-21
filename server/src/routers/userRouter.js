@@ -35,7 +35,7 @@ import RunValidation from "../validation/index.js";
 const userRouter = new express.Router();
 
 //define different routes for users
-userRouter.get("/all-user", IsLoggedIn, IsAdmin, GetAllUsers);
+userRouter.get("/all-user", GetAllUsers);
 
 userRouter.get("/single-user/:id", IsLoggedIn, IsAdmin, GetSingleUserByID);
 
